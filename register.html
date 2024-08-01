@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="register.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registerForm" onsubmit="handleSubmit(event)">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" onchange="getData(event, 'firstName')" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" onchange="getData(event, 'lastName')" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" onchange="getData(event, 'email')" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" onchange="getData(event, 'phone')" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" onchange="getData(event, 'password')" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
